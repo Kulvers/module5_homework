@@ -1,10 +1,6 @@
 var x = "3" ;
 
-
-var type = typeof x;
-
-
-switch (type) {
+switch (typeof x) {
     case "number":
         console.log('х = числу');
         break;

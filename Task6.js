@@ -1,11 +1,11 @@
+var arr = [3, 3, 3, 3, 3, 2, 3, 3];
 
-var arr = [3, 3, 3, 3];
-
- function foo(a) {
-   for (var b = 0; b < a.length; b++)
-     if (a[b] !== a[0]) return !1;
-   return !0
- };
-
- alert([foo(arr)]);
-
+var arrTrue = true;
+for (var i = 0; i < arr.length - 1; i++){
+    for (var j = i + 1; j < arr.length; j++){
+        if (arr[i] !== arr[j]){
+            arrTrue = false;
+        }
+    }
+}
+    console.log(arrTrue);
